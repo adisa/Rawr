@@ -1,0 +1,17 @@
+try {
+			FileInputStream fin = new FileInputStream("C:/Users/Adisa/workspace/2009_Qual/src/A-large-practice.in");
+			
+			DataInputStream in = new DataInputStream(fin);
+			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+			
+			int T = Integer.parseInt(br.readLine());
+			
+			for (int i = 0; i < T; i++) {
+				
+				System.out.println("Case #" + Integer.toString(i + 1) + ": ");
+			}
+			
+			br.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
